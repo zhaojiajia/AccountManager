@@ -1,0 +1,434 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    
+    <title>账户基本信息</title>
+    <style type="text/css">
+      @import "./media/css/demo_page.css";
+      @import "./media/css/demo_table.css";
+    </style>
+    <script type="text/javascript" language="javascript" src="../js/jquery.js"></script>
+    <script class="jsbin" src="../js/jqueryTables.js"></script>
+    <script class="jsbin" src="../js/data.js"></script>
+    <!--  <script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-2.0.0.min.js"></script> -->
+    <script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-ui"></script>
+    <link href="http://www.francescomalagrino.com/BootstrapPageGenerator/3/css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/bootstrap.min.js"></script>
+     <link href="../css/first.css" rel="stylesheet" media="screen">
+  </head>
+  <body id="dt_example">
+   <h2>账户管理中心</h2>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12" style="margin-bottom: 20px;height: 80px;border:1px solid;box-shadow: 10px 10px 5px #888888;">
+          <ul class="nav nav-tabs">
+            <li class="disabled">
+              <a href="./index.html">首页</a>
+            </li>
+            <li >
+              <a href="./AccountInformation.html">账户基本信息</a>
+            </li>
+            <li class="disabled">
+              <a href="./addAccount.html">增加账户信息</a>
+            </li>
+            <li class="disabled">
+              <a href="./deleteAccount.html">删除账户信息</a>
+            </li>
+            <li class="disabled">
+              <a href="./searchAccount.html">查找账户信息</a>
+            </li>
+            <li class="disabled">
+              <a href="#">修改账户信息</a>
+            </li>
+            <li class="disabled">
+              <a href="#">封存账户信息</a>
+            </li>
+            <li class="disabled">
+              <a href="#">启存账户信息</a>
+            </li>
+            <li class="dropdown pull-right">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">下拉</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">操作</a>
+                  </li>
+                  <li>
+                    <a href="#">设置栏目</a>
+                  </li>
+                  <li>
+                    <a href="#">更多设置</a>
+                  </li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+<div id="container" >
+  <center>
+  <div>
+      <table cellpadding="0" cellspacing="0" border="1" class="display" id="example" style="text-align: center;width: 1079.2px;margin-top: 20px;margin-bottom: 10px;line-height: 30px;">
+        <thead>
+          <tr>
+            <th>编号</th>
+            <th>名称</th>
+            <th>备注</th>
+            <th>状态</th>
+            <th>创建时间</th>
+            <th>最后登录时间</th>
+            <th>账号类型</th>
+            <th>其他操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="odd gradeX">
+            <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"  id="confirm_delete" onclick="delete();"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="even gradeC">
+             <td>2</td>
+            <td>账户2</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="odd gradeA">
+            <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="even gradeA">
+             <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="odd gradeA">
+             <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="even gradeA">
+             <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+             <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+             <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+             <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+             <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+             <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+             <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+            <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+             <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+            <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+             <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+            <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+             <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+             <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+             <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+            <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+             <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+             <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+            <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+            <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+             <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          <tr class="gradeA">
+            <td>1</td>
+            <td>账户1</td>
+            <td>account</td>
+            <td class="center">已开通</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">04/13/2016</td>
+            <td class="center">none</td>
+            <td class="center"><input type="button" value="删除"></input>
+                <input type="button" value="增加"></input>
+            </td>
+          </tr>
+          </tbody>
+      </table>
+    </div>
+  </center>
+  </div>
+  <script>
+$(document).ready(function() {
+  $('#example').dataTable( {
+    "aaSorting": [
+    [ 4, "desc" ]
+    ]
+  } );
+} );
+</script>
+
+<div class="row-fluid">
+  <div class="span12"  style="height: 100px;border:1px solid;box-shadow: 10px 10px 5px #888888;margin-top: 20px;margin-bottom: 20px;">
+    <p style="text-align: center;">
+      版权须知<br/>
+      Copyright © 2010 Hundsun Technologies Inc. <br/>              
+      总机：0571-28828888 传真：0571-28823456 邮政编码：310053 浙ICP备09092082号-5
+    </p>
+  </div>
+</div>
+</body>
+</html>

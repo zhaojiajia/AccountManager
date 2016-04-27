@@ -1,0 +1,11 @@
+body{
+	margin:0;
+	padding: 0;
+	margin-right: 200px;
+	margin-left: 200px;
+}
+body h2{
+	margin-left:20px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
